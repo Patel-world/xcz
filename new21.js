@@ -1,4 +1,6 @@
-var glArra = [];
+window.addEventListener('load', (event) => {
+  console.log('page is fully loaded');
+    var glArra = [];
 
 function showMob() {
     var ourDiv = document.querySelector("#f1");
@@ -18,7 +20,7 @@ function showMob() {
         } catch (e) {
           console.log("fail");
         }
-        
+        console.log(res);
         var innert = "";
         res.forEach((element) => {
           glArra.push(element)
@@ -31,6 +33,7 @@ function showMob() {
 
 showMob();
 console.log(glArra);
+});
         var x = document.querySelectorAll("body > details");
       x.forEach(qwerty);
       function qwerty(title) {
