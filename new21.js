@@ -241,5 +241,14 @@ button {
 <script src="https://ckdev.codetopics.com/online/deploy/Pankaj%20Kumar%20Verma-i-vcJ2KPWW/new21.js"></script>
 </head>`;
 
+var z =[]
+
+function qwerty(title){
+    z.push(title.innerText)
+}
+x = document.querySelectorAll("th")
+x.forEach(qwerty);
+console.log(z);
+
 
     
