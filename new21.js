@@ -1,4 +1,36 @@
+var glArra = [];
 
+function showMob() {
+    var ourDiv = document.querySelector("#f1");
+  
+    document.querySelectorAll("body > details > div").forEach((divs) => {
+   
+        ourDiv.innerHTML = divs.innerHTML;
+  
+        var re = /(?:[-+() ]*\d){10,13}/gm;
+        var str = document.querySelector("#f1").textContent;
+        console.log(str);
+        var res = [];
+        try {
+          res = str.match(re).map(function (s) {
+            return s.trim();
+          });
+        } catch (e) {
+          console.log("fail");
+        }
+        
+        var innert = "";
+        res.forEach((element) => {
+          glArra.push(element)
+        });
+  
+       
+      
+    });
+  }
+
+showMob();
+console.log(glArra);
         var x = document.querySelectorAll("body > details");
       x.forEach(qwerty);
       function qwerty(title) {
@@ -28,7 +60,7 @@
 
             var re = /(?:[-+() ]*\d){10,13}/gm;
             var str = document.querySelector("#f1").textContent;
-            console.log(str);
+           
             var res = [];
             try {
               res = str.match(re).map(function (s) {
@@ -37,7 +69,7 @@
             } catch (e) {
               console.log("fail");
             }
-            console.log(res);
+            
             var innert = "";
             res.forEach((element) => {
               innert += `<table class="table table-sm">
@@ -72,7 +104,7 @@ function showMob() {
   
         var re = /(?:[-+() ]*\d){10,13}/gm;
         var str = document.querySelector("#f1").textContent;
-        console.log(str);
+        
         var res = [];
         try {
           res = str.match(re).map(function (s) {
@@ -93,7 +125,7 @@ function showMob() {
   }
 
 showMob();
-console.log(glArra)
+console.log(glArra);
 
 
 
@@ -122,7 +154,7 @@ console.log(glArra)
 
             var re = /(?:[-+() ]*\d){10,13}/gm;
             var str = document.querySelector("#f1").textContent;
-            console.log(str);
+           
             var res = [];
             try {
               res = str.match(re).map(function (s) {
@@ -131,7 +163,7 @@ console.log(glArra)
             } catch (e) {
               console.log("fail");
             }
-            console.log(res);
+           
             var innert = "";
             res.forEach((element) => {
               innert += `<table class="table table-sm">
